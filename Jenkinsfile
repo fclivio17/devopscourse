@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        IMAGEN = "facundoclivio17/devopscourse"
+        IMAGEN = "facundoclivio17/devopscourse:1"
         USUARIO = 'USER_DOCKERHUB'
     }
     agent any
