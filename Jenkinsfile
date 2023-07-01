@@ -10,6 +10,12 @@ pipeline {
                 git branch: "main", url: 'https://github.com/fclivio17/devopscourse.git'
             }
         }
+        stage('Build Test') {
+            steps {
+                sh 'docker build -t facundoclivio17/devopscourse:latest .'
+            }
+        }
+
         stage('Build') {
             steps {
                 script {
